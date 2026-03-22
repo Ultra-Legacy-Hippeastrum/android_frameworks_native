@@ -5757,7 +5757,7 @@ status_t SurfaceFlinger::createLayer(LayerCreationArgs& args, gui::CreateSurface
     return result;
 }
 
-status_t SurfaceFlinger::createLayer(const LayerCreationArgs& args, sp<IBinder>* handle,
+status_t SurfaceFlinger::createLayer(LayerCreationArgs& args, sp<IBinder>* handle,
                                      sp<Layer>* outLayer) {
     if (checkLayerLeaks() != NO_ERROR) {
         return NO_MEMORY;
